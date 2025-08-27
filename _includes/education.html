@@ -7,18 +7,6 @@
       {{ education.title }}
     </h2>
 
-  </div><!--//education-container-->
-  {% else %}
-  <section class="section educations-section">
-
-    <h2 class="section-title">
-      <span class="fa-stack fa-xs">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
-      {{ education.title }}
-    </h2>
-
     {% for graduation in education.info %}
     <div class="item">
 
@@ -33,7 +21,7 @@
       </div><!--//meta-->
 
       {% if graduation.details %}
-      <div class="estudiante de ingenieria de sistemas con enfasis en IA">
+      <div class="estudiante">
         {{ graduation.details | markdownify }}
       </div><!--//details-->
       {% endif %}
